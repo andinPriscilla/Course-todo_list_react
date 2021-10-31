@@ -1,8 +1,14 @@
 
-import React from 'react';
+import React, {useContext} from 'react';
 import { TiTick } from 'react-icons/ti';
 import { MdDelete } from 'react-icons/md';
-const Task = ({ task, tasks, handleDelete, handleTick }) => {
+import MyContext from '../context/MyContext';
+
+const Task = ({ task }) => {
+  const context = useContext(MyContext)
+
+  const {tasks, handleDelete, handleTick} = context
+
   return (
     <div className='task-container'>
       <div className='tick'>

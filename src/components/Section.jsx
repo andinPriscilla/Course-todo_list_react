@@ -3,19 +3,11 @@ import React from "react";
 import TaskContainer from "./TaskContainer";
 import DoneContainer from "./DoneContainer";
 
-const Section = ({ tasks, tasksDone, handleDelete, handleTick }) => {
+const Section = () => {
   return (
     <section>
-      <TaskContainer
-        tasks={tasks}
-        handleDelete={handleDelete}
-        handleTick={handleTick}
-      />
-      <DoneContainer
-        tasksDone={tasksDone}
-        handleDelete={handleDelete}
-        handleTick={handleTick}
-      />
+      <TaskContainer />
+      <DoneContainer />
     </section>
   );
 };

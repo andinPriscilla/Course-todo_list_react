@@ -4,11 +4,11 @@ import React from 'react'
 import Form from './Form'
 
 
-const Header = ({task,setTask,handleSubmit,inputRef}) => {
+const Header = () => {
     return (
         <header>
-       
-            <Form task={task} setTask={setTask} handleSubmit={handleSubmit} inputRef={inputRef}/>
+
+            <Form  />
         </header>
     )
 }
